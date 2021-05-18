@@ -2,6 +2,17 @@ name: Database of Individual Differences
 output_dir: "."
 navbar:
   title: "DID"
+  left:
+    - text: "Master Item List"
+      href: "master-item-list.html"
+    - text: "Trait Descriptive Adjectives and Type Nouns"
+      href: "tdatn.html"
+    - text: "Item Documentation"
+      href: "documentation.html"
+    - text: "ICAR items"
+      href: "icar.html"
+    - text: "ESCS Crosswalk"
+      href: "crosswalk.html"
   right:
     - icon: fa-github
       href: https://github.com/pie-lab/did

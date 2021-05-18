@@ -1,0 +1,32 @@
+---
+title: "Trait Descriptive Adjectives and Type Nouns"
+output: 
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      message = FALSE, 
+                      warning = FALSE,
+                      results = 'asis')
+```
+
+# Description
+
+TDATN is an acronym for Trait-Descriptive Adjectives and Type Nouns. These items have a long history in psycholexical personality research. Most of these items come from the set published by Allport and Odbert (1936), but there are some important additions (mainly these were contributed by Norman). Various subsets of these words continue to be used, though much less frequently since widespread adoption of Big Five and Big Six frameworks since 2000-2005.
+
+# Table
+
+```{r}
+library(rio)
+library(tidyverse)
+library(DT)
+
+did2 = import("DID24jun2019.xlsx", sheet = 2, skip = 5)
+
+did2 %>%
+  datatable(filter = "top", rownames = F)
+```
+

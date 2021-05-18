@@ -10,4 +10,37 @@ output:
     theme: cosmo
 ---
 
+# Citation information
 
+This posting of the Database of Individual Differences was developed using the Excel spreadsheet found on the [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T1NQ4V). You can download all data provided through the Harvard Database. Please cite this material as:
+
+Condon, David, 2019, "Database of Individual Differences Survey Tools", https://doi.org/10.7910/DVN/T1NQ4V, Harvard Dataverse, V1, UNF:6:FCCWfaeVH1eVQYy5vx8mZQ== [fileUNF]
+
+A bib file can be created with the following:
+
+`@data{DVN/T1NQ4V_2019,
+author = {Condon, David},
+publisher = {Harvard Dataverse},
+title = {{Database of Individual Differences Survey Tools}},
+UNF = {UNF:6:FCCWfaeVH1eVQYy5vx8mZQ==},
+year = {2019},
+version = {V1},
+doi = {10.7910/DVN/T1NQ4V},
+url = {https://doi.org/10.7910/DVN/T1NQ4V}
+}`
+
+# Notes for authors
+
+**If you are an author for one or more of the scales listed in the database,** please contact me if (a) you would like to have your scale fully redacted from the database or (b) you would like to have the usability information changed for your scale. By default, all scale content is omitted/redacted until I have received written correspondence from the scale developer(s). Unfortunately, I do not have time to solicit permission directly from all scale development teams. You will be doing a great service to the field by making your content available in this central repository. I also believe that this will increase the discoverability of your scale and citation record, though I do not currently have any empirical data to support this belief.
+
+**If you are an author seeking to add your scale to the database,** IF YOU ARE AN AUTHOR SEEKING TO ADD YOUR SCALE ADDED TO THE DATABASE, please contact me with information about your scale. In most cases, I will ask you to provide a citation for the scale(s) and some evidence that the scale is relevant for individual differences researchers (if not obvious from the citation).
+
+**If you have suggestions of scales to be added to the database,** feel free to email your suggestions along with a DOI and/or a link to the content of the scales. Please be patient -- it often takes me longer to reply than I would like.
+
+You will find the following information on this website:
+
+1. **Master Item List**
+2. **Trait-descriptive adjective and Type nouns (TDATN)**
+3. **Documentation of the Master Item List and TDATN**
+4. **ICAR items**
+5. **ESCS-SAPA crosswalk**

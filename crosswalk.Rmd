@@ -1,0 +1,36 @@
+---
+title: "Crosswalk"
+output: 
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      message = FALSE, 
+                      warning = FALSE,
+                      results = 'asis')
+```
+
+# Description
+
+This file allows researchers to align the IPIP items administered to the Eugene-Springfield sample with the IPIP items administered to the SAPA sample.
+
+
+# Table
+
+```{r}
+library(rio)
+library(tidyverse)
+library(DT)
+
+did5 = import("DID24jun2019.xlsx", sheet = 5, col_names = F) %>%
+  select(1:2) 
+
+did5 %>%
+  datatable(
+    colnames = c("IPIP Label", "SAPA label"),
+    filter = "top", rownames = F)
+```
+

@@ -1,0 +1,48 @@
+---
+title: "Item Documentation"
+output: 
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      message = FALSE, 
+                      warning = FALSE,
+                      results = 'asis')
+```
+
+# Description
+
+This file provides citation information for all of the scales listed in **Master Item List** and **TDATN** and for the trait-descriptive terms in TDATN.csv. **You are responsible for using the correct citation information.** Failure to provide proper citation to the work of other researchers is unethical and, quite often, illegal. I have done my best to provide accurate citation information for all of the scales included herein, but you should not assume that this is accurate in any case. If you find any accuracies, please notify me at your earliest convenience.
+
+# Documentation of Trait Descriptive Adjective and Type Nouns (TDATN)
+
+From Norman: "The initial pool of terms considered was the set of 17,954 'Trait-Names' drawn from the 1925 unabridged edition of Webster's New International Dictionary, and listed by Allport and Odbert (1936). Each term in this list together with a code number was punched into (and printed on) a separate IBM card for subsequent handling. In addition the entire contents of Webster's Third New International Dictionary, Unabridged (1961) was scanned and all terms which pertained in any manner to attributes of persons or their behavior but which were not included in the Allport-Odbert list were recorded. In the course of this effort notations were made of all terms listed by Allport and Odbert which have been dropped from the Third International and any relevant grammatical, prefixal, or suffixal forms of terms not included in the Allport-Odbert pool were also added. By rough estimate it appears that the total pool comprising both the total Allport-Odbert list and all potential additions from Webster's Third numbers nearly 40,000 terms or roughly 10% of the total number of entries in the latter source."
+"Note that the description provided above references 17,954 terms in the Allport-Odbert lists. This is the same count described in many other sources, presumably drawing from the original reference. By my count, the actual number is only 17,950.
+
+Documentation of this complete 40,000 word list is presumably lost to history (perhaps for the best). Norman went on to describe the culling procedure on the basis of four general criteria (without specific examples):
+
+  1. rare usage in contemporary discourse
+  2. relating to overly broad classes of attributes or behaviors
+  3. references to anatomical or physiognomic characteristics, medical or physiological symptoms, physical aspects of behavior, movements, or location, appearance, grooming and dress.
+  4. connotations of purely evaluative characteristics or quantification of degree or amount of some other more substantive term."
+
+"Terms were removed if they were classified as having one (or more) of these criteria by one member of the research staff and subsequently confirmed by at least two of the three others. Following this process, Norman reports that "some 2800 terms" remained. The actual count appears to be 2797.
+
+It should be noted that this list contains 2,624 words that are included in the Allport-Odbert set and 173 which are not. There were also some differences in spelling for 11 terms across the two lists (adamantean, a la militaire, blasé, contrary-minded, coordinative, derider, ingenue, overperemptory, tyrannical, unscintillating, vociferous). In cases where the differences in spelling were caused by use of the accents and non-English letters, I kept the more simple version (this was most often consistent with Norman's spelling). For many of the (173) remaining discrepant words, the differences represented different forms of overlapping stems."
+
+# Master Item List Documentation
+
+```{r}
+library(rio)
+library(tidyverse)
+library(DT)
+
+did3 = import("DID24jun2019.xlsx", sheet = 3, skip = 8)
+
+did3 %>%
+  datatable(filter = "top", rownames = F)
+```
+

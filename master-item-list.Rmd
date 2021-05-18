@@ -1,0 +1,112 @@
+---
+title: "Master Item List"
+output: 
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      message = FALSE, 
+                      warning = FALSE,
+                      results = 'asis')
+```
+# Description
+
+This file provides a listing of the self-report items in the Database of Individual Differences. Note that the content is omitted or redacted for many items in this publicly-available version of the file -- as described above, this is done to protect the interests of the scale developers. I am happy to correspond with researchers seeking more information about omitted items but I urge you to first review the references I have provided in Documentation.csv. In most cases, I do not have access to any additional information about the scales.
+
+Items in the MasterItemList are listed in sequential order by **Item ID**. Item labels are preceded by "q_" by historical convention (this was mainly done because statistical software like R does not like row/column labels that begin with integers). Note that the **Item ID** values start at 1 and continue until 9999 before jumping to 50000 (and beyond). This was done to distinguish the self-report item numbers from the items in the ICAR set (see below).
+
+The **Item** column shows the item content (when allowed). 
+
+The **Response Type** column indicates the response choice options used for administration of the item on the SAPA-Project. In most cases, the regular (`reg`) response options are used. I strongly encourage other researchers to use these response choices whenever possible. Changes to the response options can be seriously problematic, especially for efforts to harmonize scales, conduct comparative validity analyses, and derive item response theory-based calibrations. Deviations should be used only when well-justified and this is extremely rare. The PROMIS response sets (`promisRS1` through `promisRS7`) were only added for use with items in the PROMIS framework because they have a strict policy against the use of any other response choices. The frequency (`freq`) response options are used for items where counts of behavioral frequency are needed instead of strength of endorsement. The complete listing of response types options includes:
+
+`reg`:
+1: Very Inaccurate
+2: Moderately Inaccurate
+3: Slightly Inaccurate
+4: Slightly Accurate
+5: Moderately Accurate
+6: Very Accurate
+
+`freq`
+1: Never in my life
+2: Not in the past year
+3: < 3 times in past year
+4: 3-10 times in past year
+5: 10-20 times in past year
+6: > 20 times in past year
+
+`promisRS1`
+1: Completely
+2: Mostly
+3: Moderately
+4: A little
+5: Not at all
+
+`promisRS2`
+1: Excellent
+2: Very Good
+3: Good
+4: Fair
+5: Poor
+
+`promisRS3`
+1: Never
+2: Rarely
+3: Sometimes
+4: Often
+5: Always
+
+`promisRS4`
+1: None
+2: Mild
+3: Moderate
+4: Severe
+5: Very Severe
+
+`promisRS5`
+1: Not at all
+2: A little bit
+3: Somewhat
+4: Quite a bit
+5: Very much
+
+`promisRS6`
+1: Very poor
+2: Poor
+3: Fair
+4: Good
+5: Very good
+
+`promisRS7`
+1: Without any difficulty
+2: With a little difficulty
+3: With some difficulty
+4: With much difficulty
+5: Unable to do
+
+The **unique** column indicates whether the item is unique. This is necessary because duplicate items have found their way into the database over the years, for various reasons. Duplicate items are coded as a 0 but the item labels are retained as part of version control as this prevents confusion when combining older and newer datasets.
+
+# Table 
+
+```{r}
+library(rio)
+library(tidyverse)
+library(DT)
+
+did1 = import("DID24jun2019.xlsx", sheet = 1, skip = 4)
+did1 = select(did1, -starts_with("."))
+
+did1 %>%
+  datatable(colnames = c(
+    "Item ID",
+    "Number",
+    "Item",
+    "Scale",
+    "Response type",
+    "Unique"),
+    filter = "top", rownames = F)
+```
+
