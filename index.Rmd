@@ -39,8 +39,8 @@ url = {https://doi.org/10.7910/DVN/T1NQ4V}
 
 You will find the following information on this website:
 
-1. **Master Item List**
-2. **Trait-descriptive adjective and Type nouns (TDATN)**
-3. **Documentation of the Master Item List and TDATN**
-4. **ICAR items**
-5. **ESCS-SAPA crosswalk**
+1. [**Master Item List**](https://pie-lab.github.io/did/master-item-list.html)
+2. [**Trait-descriptive adjective and Type nouns (TDATN)**](https://pie-lab.github.io/did/tdatn.html)
+3. [**Documentation of the Master Item List and TDATN**](https://pie-lab.github.io/did/documentation.html)
+4. [**ICAR items**](https://pie-lab.github.io/did/icar.html)
+5. [**ESCS-SAPA crosswalk**](https://pie-lab.github.io/did/crosswalk.html)
