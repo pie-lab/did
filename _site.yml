@@ -1,0 +1,11 @@
+name: Database of Individual Differences
+output_dir: "."
+navbar:
+  title: "DID"
+  right:
+    - icon: fa-github
+      href: https://github.com/pie-lab/did
+output:
+  html_document:
+    lib_dir: site_libs
+    self_contained: no

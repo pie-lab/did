@@ -1,0 +1,13 @@
+---
+title: "Database of Individual Differences"
+subtitle: "Brought to you by the SAPA-Project"
+author: "Davd M. Condon"
+output: 
+  html_document:
+    toc: TRUE
+    toc_depth: 2
+    toc_float: TRUE
+    theme: cosmo
+---
+
+
