@@ -33,7 +33,7 @@ url = {https://doi.org/10.7910/DVN/T1NQ4V}
 
 **If you are an author for one or more of the scales listed in the database,** please contact me if (a) you would like to have your scale fully redacted from the database or (b) you would like to have the usability information changed for your scale. By default, all scale content is omitted/redacted until I have received written correspondence from the scale developer(s). Unfortunately, I do not have time to solicit permission directly from all scale development teams. You will be doing a great service to the field by making your content available in this central repository. I also believe that this will increase the discoverability of your scale and citation record, though I do not currently have any empirical data to support this belief.
 
-**If you are an author seeking to add your scale to the database,** IF YOU ARE AN AUTHOR SEEKING TO ADD YOUR SCALE ADDED TO THE DATABASE, please contact me with information about your scale. In most cases, I will ask you to provide a citation for the scale(s) and some evidence that the scale is relevant for individual differences researchers (if not obvious from the citation).
+**If you are an author seeking to add your scale to the database,** please contact me with information about your scale. In most cases, I will ask you to provide a citation for the scale(s) and some evidence that the scale is relevant for individual differences researchers (if not obvious from the citation).
 
 **If you have suggestions of scales to be added to the database,** feel free to email your suggestions along with a DOI and/or a link to the content of the scales. Please be patient -- it often takes me longer to reply than I would like.
 
